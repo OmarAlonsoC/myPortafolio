@@ -1,0 +1,571 @@
+
+
+/* @import url("font-awesome.min.css"); */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+/* Basic */
+
+html {
+	/* box-sizing: border-box; */
+	scroll-behavior: smooth;
+}
+
+/* *, *:before, *:after {
+	box-sizing: inherit;
+} */
+
+
+.zero{
+	background-image: url("/images/circuitBackground.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	padding: 0!important;
+	/* position: relative; */
+
+	/* text-align: center; */
+	/* vertical-align: middle; */
+	/* justify-content: center; */
+	/* padding: 100px; */
+	/* margin: auto; */
+}
+
+.zero h2{
+	color: white;
+	font-size: 2em; 
+	font-weight: 500;
+}
+
+#intro-text {
+	position: absolute;
+    top: 50%; 
+	left: 50%;
+	/* margin: auto 0; */
+}
+
+#down-button {
+	position: absolute;
+	margin-top: 350px;
+	/* border: 1px solid black; */
+    /* border-radius: 11px; */
+    /* padding: 4px; */
+}
+
+body {
+	background: #fff; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17pt;
+	font-weight: 300;
+	line-height: 1.75em; 
+  color: #888; /* For the text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	color: #000000; /* #666 For the headers of decription*/
+	line-height: 1.5em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
+	color: #333; /* No sirve*/
+}
+
+h2 {
+	font-size: 2em;
+	letter-spacing: -1px;
+}
+
+h2.alt {
+	color: #888; /* No sirve*/
+}
+
+h2.alt strong {
+	color: #666; /* No sirve*/
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+header {
+	margin: 0 0 2em 0;
+}
+
+header>p {
+	margin: 1em 0 0 0;
+}
+
+footer {
+	margin: 2em 0 0 0;
+}
+
+strong, b {
+	font-weight: 300;
+  color: #666;  /* No sirve*/ 
+
+}
+
+em, i {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	outline: 0;
+}
+
+a:hover {
+	color: lightcoral;
+	/* color: lightskyblue; */
+}
+
+br.clear {
+	clear: both;
+}
+
+/* Header */
+
+#header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* background: #222629 url("images/overlay.png"); for side menu , #004d65 nice color*/
+  background: #004d65 url("images/overlay.png");
+	box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+	color: #fff;
+	height: 100%;
+	left: 0;
+	overflow-y: auto;
+	position: fixed;
+	text-align: right;
+	top: 0;
+
+/* FOR WHEN LARGER SIZE maybe change to 200px */
+	width: 200px; 
+}
+
+li {
+    /* color: #fff; */
+    font-weight: 200;
+    font-size: 0.9em;
+    /* line-height: 1.5em; */
+}
+
+#header .top {
+	flex-grow: 1;
+}
+
+#header .bottom {
+	flex-shrink: 0;
+	padding: 1.5em 0 0.75em 0;
+}
+
+#header .bottom> :last-child {
+	margin-bottom: 0;
+}
+
+#header .icons {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#header .icons a {
+	color: #41484c;
+	transition: color 0.35s ease-in-out;
+}
+
+#header .icons a:hover {
+	color: #fff;
+}
+
+#logo {
+	position: relative;
+	/* margin: 1.75em 1.5em 1.5em 1.5em; */
+	/* min-height: 48px; */
+	cursor: default;
+}
+
+#logo h1 {
+	position: relative;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+#logo p {
+	position: relative;
+	display: block;
+	font-size: 0.6em;
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.25em;
+	margin: 0.5em 0 0 0;
+}
+
+#logo .image {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#nav ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#nav ul li {
+	padding-left: 0;
+}
+
+#nav ul li a {
+	display: block;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	transition: none;
+}
+
+#nav ul li a span {
+	position: relative;
+	display: block;
+	font-size: 0.8em;
+}
+
+#nav ul li a span:before {
+	position: absolute;
+	left: 0;
+	color: #41484c; 
+	text-align: center;
+	width: 1.25em;
+	line-height: 1.75em;
+}
+
+#nav ul li a.active {
+	background: rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+	color: #fff;
+}
+
+#nav ul li a.active span:before {
+	color: #e27689;
+}
+
+
+/* Footer */
+
+#footer {
+
+/* FOR WHEN LARGER SIZE maybe change to 200px */
+	margin-left: 200px;
+	text-align: center;
+	background-color: #dce3e2;
+	padding: 1em 0 1em 0;
+	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+	/* font-size: 0.8em; */
+}
+
+#footer .copyright {
+	cursor: default;
+	margin: 0;
+}
+
+/* Main */
+
+#main {
+
+/* FOR WHEN LARGER SIZE maybe change to 200px */
+	margin-left: 200px;
+}
+
+
+/*  Added by Me */
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* SCREEN BREAKPOINTS */
+
+/* Wide (side panel visible) */
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+	/* Header */
+	#header {
+		width: 200px;
+	}
+	/* Main - make space for header */
+	#main {
+		margin-left: 200px;
+	}
+	/* Footer - make space for header  */
+	#footer {
+		margin-left: 200px;
+	}
+
+	/* Added by Me */
+	.overlay {
+		display: none !important;
+		opacity: 0 !important;
+	}
+}
+
+/* temp "hack" */
+@media screen and (min-width: 961px) and (max-width: 9999px) {
+	/* Added by Me */
+	.overlay {
+		display: none !important;
+		opacity: 0 !important;
+	}
+}
+
+/* Normal (side panel visible)  */
+@media screen and (min-width: 961px) and (max-width: 1620px) {
+	/* Added by Me */
+	.overlay {
+		display: none !important;
+		opacity: 0 !important;
+	}
+}
+
+/* Narrow (side panel visible)  */
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+	/* Added by Me */
+	.overlay {
+		display: none !important;
+		opacity: 0 !important;
+	}
+}
+
+/* Narrower  (side panel hidden)  */
+#headerToggle {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	/* Basic */
+	html, body {
+		overflow-x: hidden;
+	}
+	header br {
+		display: none;
+	}
+	/* Header */
+	#header {
+		backface-visibility: hidden;
+		transform: translateX(-200px);
+		transition: transform 0.5s ease;
+		-webkit-overflow-scrolling: touch;
+		display: block;
+		height: 100%;
+		left: 0;
+		overflow-y: auto;
+		position: fixed;
+		top: 0;
+		width: 200px;
+		z-index: 10002;
+		width: 200px;
+		background: #222729 url("images/overlay.png");
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+	}
+	#header .top {
+		position: relative;
+	}
+	#header .bottom {
+		border-top: solid 1px rgba(255, 255, 255, 0.05);
+		box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+		padding-top: 2em;
+		margin-top: 2em;
+		position: relative;
+	}
+	#headerToggle {
+		backface-visibility: hidden;
+		transition: transform 0.5s ease;
+		display: block;
+		height: 2.25em;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 3.25em;
+		z-index: 10001;
+	}
+	/*  */
+	#headerToggle .toggle {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		outline: 0;
+		border: 0;
+	}
+	/* active toggle */
+	#headerToggle {
+		font-size: 18px;
+		background: rgba(128, 136, 144, 0.5);
+		border-radius: 0.35em;
+		text-align: center;
+		left: 0.5em;
+		top: 0.5em;
+	}
+	body.header-visible #headerToggle {
+		transform: translateX(200px);
+	}
+	body.header-visible #header {
+		transform: translateX(0);
+	}
+	/* sidebar is hidden so Footer takes full width*/
+	#footer { margin-left: 0; }
+	/* Main */
+	#main {
+		backface-visibility: hidden;
+		transition: transform 0.5s ease;
+		padding-bottom: 1px;
+		margin-left: 0;
+	}
+}
+
+
+/* toggle */
+:root {
+	--color-primary: #18181A;
+	--color-secondary: #75757C;
+	--color-dark: #364C62;
+	--color-light: #F5F5F5;
+	--font-family-primary: 'Roboto Mono', monospace;
+	--font-family-secondary: 'Rubik Mono One', sans-serif;
+	--td: 150ms;
+	--te: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  
+  #main-navigation-toggle {
+	/* margin-top: 65px; */
+	/* margin-right: 13px; */
+	/* position: fixed; */
+	/* top: -100%; */
+	width: 100%;
+    height: 100%;
+	/* hide checkbox */
+    display: none;
+	opacity: 0;
+  }
+  #main-navigation-toggle ~ label {
+	/* margin:0 auto; */
+	cursor: pointer;
+	/* takes all parent inner space */
+	height: 100%;
+	width: 100%;
+	border: 1px;
+	border-radius: 0.35em;
+  }
+  #main-navigation-toggle ~ label span {
+	/*  bottom "line" */
+	border-bottom: solid 4px #F5F5F5;
+
+	display: block;
+    /* height: 2rem; */
+	padding: 0.5rem;
+	position: absolute;
+	transition: transform calc(var(--td) * 4) var(--te);
+	top: 0;
+	/* make space for border */
+	bottom: 4px; 
+	left: 0;
+	right: 0;
+	height: 24px;
+	width: 50%;
+	margin: auto;
+	/* affects all transitions! */
+	/* transition: all 3s linear; */
+  }
+  
+  /* create 3 lines bafore and after given span */
+  #main-navigation-toggle ~ label #top::before, /* top */
+  #main-navigation-toggle ~ label #top::after{ /* middle */
+	background-color: var(--color-light);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: '';
+	height: 4px;
+	margin: auto;
+	position: absolute;
+	transition: transform calc(var(--td) * 3) var(--te);
+	width: 100%;
+  }
+  
+  /* normal position */
+  #main-navigation-toggle ~ label #top::before {
+	transform: rotate(0) translateY(-100%);
+  }
+  #main-navigation-toggle ~ label #top::after {
+	transform: rotate(0) translateY(100%);
+  }
+  
+  /* action when clicked */
+  #main-navigation-toggle:checked ~ label #top {
+	transform: rotate(1turn);
+	/*  hide bottom "line" */
+	border-bottom: none;
+	/* since border is not taking space anymore */
+	bottom: 0; 
+	/* border-color: transparent; */
+  }
+  
+  #main-navigation-toggle:checked ~ label #top::before {
+	transform: rotate(45deg);
+  }
+  #main-navigation-toggle:checked ~ label #top::after {
+	transform: rotate(-45deg);
+  }
+
+
+  /* issues?? */
+  /* we have many triggers for the sidebar or checkbox or overlay */
+  /* 
+  #headerToggle div
+  #main-navigation-toggle = checkbox
+  overlay
+  before and after
+  */
+
+
+  /* Bootstrap 5 CSS override */
+  .list-group-item+.list-group-item {
+	  border-top-width: 1px;
+	}
+
+	.list-group-item:hover {
+		background-color: #b3a8c0 !important;
+	}
+
+	.list-title {
+		font-weight: 400;
+	}
+
+	.desc {
+		font-size: 0.9em;
+		line-height: 1.7;
+	}
