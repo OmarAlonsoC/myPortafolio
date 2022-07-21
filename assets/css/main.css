@@ -16,7 +16,7 @@ html {
 
 
 .zero{
-	background-image: url("/images/circuitBackground.png");
+	background-image: url("images/circuitBackground.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
