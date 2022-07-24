@@ -16,7 +16,8 @@ html {
 
 
 .zero{
-	background-image: url("images/circuitBackground.png");
+	/*background-image: url("images/circuitBackground.png"); */
+    background-image: url("images/AudioAmplifierVertical/audio12.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
